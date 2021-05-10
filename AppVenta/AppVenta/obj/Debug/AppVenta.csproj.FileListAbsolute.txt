@@ -1,0 +1,16 @@
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\AppVenta.exe.config
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\AppVenta.exe
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\AppVenta.pdb
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\EntityFramework.dll
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\EntityFramework.xml
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.csprojAssemblyReference.cache
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.Form1.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.Properties.Resources.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.csproj.GenerateResource.cache
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.csproj.CoreCompileInputs.cache
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.csproj.CopyComplete
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.exe
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.pdb
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmVenta.resources
