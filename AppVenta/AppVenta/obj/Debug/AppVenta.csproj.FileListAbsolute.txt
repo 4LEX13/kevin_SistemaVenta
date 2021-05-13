@@ -16,3 +16,6 @@ C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.pd
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmVenta.resources
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmMenú.resources
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmProducto.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmClientes.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmDocumentos.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmUsuarios.resources

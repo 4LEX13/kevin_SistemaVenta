@@ -31,12 +31,14 @@ namespace AppVenta.VISTA
         {
             this.lblId = new System.Windows.Forms.Label();
             this.lblNombreDocumento = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtIdDocumento = new System.Windows.Forms.TextBox();
+            this.txtNombreDocumento = new System.Windows.Forms.TextBox();
             this.dgtDocumento = new System.Windows.Forms.DataGridView();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgtDocumento)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,27 +60,35 @@ namespace AppVenta.VISTA
             this.lblNombreDocumento.TabIndex = 1;
             this.lblNombreDocumento.Text = "Nombre del documento";
             // 
-            // textBox1
+            // txtIdDocumento
             // 
-            this.textBox1.Location = new System.Drawing.Point(166, 42);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtIdDocumento.Location = new System.Drawing.Point(166, 42);
+            this.txtIdDocumento.Name = "txtIdDocumento";
+            this.txtIdDocumento.Size = new System.Drawing.Size(191, 20);
+            this.txtIdDocumento.TabIndex = 2;
             // 
-            // textBox2
+            // txtNombreDocumento
             // 
-            this.textBox2.Location = new System.Drawing.Point(166, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(191, 20);
-            this.textBox2.TabIndex = 3;
+            this.txtNombreDocumento.Location = new System.Drawing.Point(166, 91);
+            this.txtNombreDocumento.Name = "txtNombreDocumento";
+            this.txtNombreDocumento.Size = new System.Drawing.Size(191, 20);
+            this.txtNombreDocumento.TabIndex = 3;
             // 
             // dgtDocumento
             // 
+            this.dgtDocumento.AllowUserToAddRows = false;
+            this.dgtDocumento.AllowUserToDeleteRows = false;
+            this.dgtDocumento.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgtDocumento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgtDocumento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
             this.dgtDocumento.Location = new System.Drawing.Point(46, 169);
             this.dgtDocumento.Name = "dgtDocumento";
+            this.dgtDocumento.ReadOnly = true;
             this.dgtDocumento.Size = new System.Drawing.Size(400, 157);
             this.dgtDocumento.TabIndex = 4;
+            this.dgtDocumento.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtDocumento_CellContentClick);
             // 
             // btnGuardar
             // 
@@ -88,6 +98,7 @@ namespace AppVenta.VISTA
             this.btnGuardar.TabIndex = 5;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnActualizar
             // 
@@ -97,6 +108,7 @@ namespace AppVenta.VISTA
             this.btnActualizar.TabIndex = 6;
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnEliminar
             // 
@@ -106,6 +118,19 @@ namespace AppVenta.VISTA
             this.btnEliminar.TabIndex = 7;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre del Documento";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
             // 
             // frmDocumentos
             // 
@@ -116,12 +141,13 @@ namespace AppVenta.VISTA
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.dgtDocumento);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNombreDocumento);
+            this.Controls.Add(this.txtIdDocumento);
             this.Controls.Add(this.lblNombreDocumento);
             this.Controls.Add(this.lblId);
             this.Name = "frmDocumentos";
             this.Text = "frmDocumentos";
+            this.Load += new System.EventHandler(this.frmDocumentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgtDocumento)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -132,11 +158,13 @@ namespace AppVenta.VISTA
 
         private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblNombreDocumento;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtIdDocumento;
+        private System.Windows.Forms.TextBox txtNombreDocumento;
         private System.Windows.Forms.DataGridView dgtDocumento;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

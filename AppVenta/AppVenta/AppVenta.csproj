@@ -173,11 +173,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VISTA\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\frmDocumentos.resx">
+      <DependentUpon>frmDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="VISTA\frmMenú.resx">
       <DependentUpon>frmMenú.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\frmProducto.resx">
       <DependentUpon>frmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VISTA\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VISTA\frmVenta.resx">
       <DependentUpon>frmVenta.cs</DependentUpon>
