@@ -14,3 +14,5 @@ C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.cs
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.exe
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.pdb
 C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmVenta.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmMenú.resources
+C:\Users\kevin\Documents\GitHub\AppVenta\AppVenta\AppVenta\obj\Debug\AppVenta.VISTA.frmProducto.resources
