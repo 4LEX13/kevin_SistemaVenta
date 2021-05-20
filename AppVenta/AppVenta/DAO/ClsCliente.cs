@@ -10,19 +10,18 @@ namespace AppVenta.DAO
     class ClsCliente
     {
 
-        public List<tb_cliente> cargarDatoUserList()
+        public List<tb_cliente> cargarComboCliente()
 
         {
-            List<tb_cliente> Lista;
-
+            List<tb_cliente> tb_Clientes = new List<tb_cliente>();
             using (sistema_ventasEntities3 db = new sistema_ventasEntities3())
             {
-                Lista = db.tb_cliente.ToList();
+                tb_Clientes = db.tb_cliente.ToList();
 
 
             }
 
-            return Lista;
+            return tb_Clientes;
         }
 
 

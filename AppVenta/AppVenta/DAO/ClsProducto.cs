@@ -11,19 +11,22 @@ namespace AppVenta.DAO
     {
 
 
-        public List<tb_producto> cargarDatoUserList()
+        public List<tb_producto> cargarProductoFiltro(String filtro)
 
         {
-            List<tb_producto> Lista;
+            List<tb_producto> tb_Productos = new List<tb_producto>();
 
             using (sistema_ventasEntities3 db = new sistema_ventasEntities3())
             {
-                Lista = db.tb_producto.ToList();
+                tb_Productos = (from listadeproductos in db.tb_producto
+                                where listadeproductos.nombreProducto.Contains(filtro)
+                                select listadeproductos).ToList();
+
 
 
             }
 
-            return Lista;
+            return tb_Productos;
         }
 
 

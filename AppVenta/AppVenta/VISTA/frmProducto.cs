@@ -23,6 +23,7 @@ namespace AppVenta.VISTA
 
         void clear()
         {
+          
             txtIdProducto.Clear();
             txtNombreProducto.Clear();
             txtPrecio.Clear();
@@ -31,17 +32,15 @@ namespace AppVenta.VISTA
         }
         void Carga()
         {
-
+            var ClsProducto = new ClsProducto();
             dgtProducto.Rows.Clear();
-            using (sistema_ventasEntities3 db = new sistema_ventasEntities3())
-            {
-                var Lista = db.tb_producto.ToList();
+           
 
-                foreach (var iteracion in Lista)
+                foreach (var ListarDatos in ClsProducto.cargarProductoFiltro(txtNombreProducto.Text))
                 {
-                    dgtProducto.Rows.Add(iteracion.idProducto, iteracion.nombreProducto, iteracion.precioProducto, iteracion.estadoProducto);
+                    dgtProducto.Rows.Add(ListarDatos.idProducto,ListarDatos.nombreProducto,ListarDatos.precioProducto);
                 }
-            }
+            
 
         }
 
@@ -66,7 +65,7 @@ namespace AppVenta.VISTA
 
         private void frmProducto_Load(object sender, EventArgs e)
         {
-
+            Carga();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -106,6 +105,18 @@ namespace AppVenta.VISTA
             txtNombreProducto.Text = nombreProducto;
             txtPrecio.Text = precioProducto;
             txtEstado.Text = estadoProducto;
+        }
+
+        private void dgtProducto_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            String Id = dgtProducto.CurrentRow.Cells[0].Value.ToString();
+            String Nombre = dgtProducto.CurrentRow.Cells[1].Value.ToString();
+            String Precio = dgtProducto.CurrentRow.Cells[2].Value.ToString();
+
+            frmVenta frmVenta = new frmVenta();
+            frmVenta.txtId.Text = Id;
+            frmVenta.txtNombreProducto.Text = Nombre;
+            frmVenta.txtPrecio.Text = Precio;
         }
     }
     

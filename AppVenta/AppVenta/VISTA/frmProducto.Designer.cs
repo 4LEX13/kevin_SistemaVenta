@@ -36,15 +36,15 @@ namespace AppVenta.VISTA
             this.txtPrecio = new System.Windows.Forms.TextBox();
             this.txtEstado = new System.Windows.Forms.TextBox();
             this.dgtProducto = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.txtIdProducto = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgtProducto)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,7 @@ namespace AppVenta.VISTA
             this.txtNombreProducto.Name = "txtNombreProducto";
             this.txtNombreProducto.Size = new System.Drawing.Size(161, 20);
             this.txtNombreProducto.TabIndex = 3;
+            this.txtNombreProducto.TextChanged += new System.EventHandler(this.frmProducto_Load);
             // 
             // txtPrecio
             // 
@@ -113,7 +114,31 @@ namespace AppVenta.VISTA
             this.dgtProducto.ReadOnly = true;
             this.dgtProducto.Size = new System.Drawing.Size(513, 140);
             this.dgtProducto.TabIndex = 6;
-            this.dgtProducto.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtProducto_CellContentClick);
+            this.dgtProducto.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgtProducto_CellClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Id";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Nombre de producto";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Precio";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Estado";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
             // 
             // btnGuardar
             // 
@@ -160,30 +185,6 @@ namespace AppVenta.VISTA
             this.txtIdProducto.Name = "txtIdProducto";
             this.txtIdProducto.Size = new System.Drawing.Size(161, 20);
             this.txtIdProducto.TabIndex = 11;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Nombre de producto";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Precio";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Estado";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
             // 
             // frmProducto
             // 

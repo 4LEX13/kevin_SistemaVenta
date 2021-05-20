@@ -9,19 +9,19 @@ namespace AppVenta.DAO
 {
     class ClsDocumento
     {
-        public List<tb_documento> cargarDatoUserList()
+        public List<tb_documento> cargarComboDocumento()
 
         {
-            List<tb_documento> Lista;
+            List<tb_documento> tb_Documentos = new List<tb_documento>();
 
             using (sistema_ventasEntities3 db = new sistema_ventasEntities3())
             {
-                Lista = db.tb_documento.ToList();
+                tb_Documentos = db.tb_documento.ToList();
 
 
             }
 
-            return Lista;
+            return tb_Documentos;
         }
 
 

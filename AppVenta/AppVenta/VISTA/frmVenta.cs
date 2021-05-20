@@ -1,4 +1,5 @@
-﻿using AppVenta.MODEL;
+﻿using AppVenta.DAO;
+using AppVenta.MODEL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,22 +26,28 @@ namespace AppVenta.VISTA
 
         private void frmVenta_Load(object sender, EventArgs e)
         {
-            using (sistema_ventasEntities3 bd = new sistema_ventasEntities3())
-            {
-                var consultacliente = bd.tb_cliente.ToList();
+            ClsCliente clsCliente = new ClsCliente();
+            
+                
 
 
-                comboBox2.DataSource = consultacliente;
+                comboBox2.DataSource = clsCliente.cargarComboCliente();
                 comboBox2.DisplayMember = "nombreCliente";
                 comboBox2.ValueMember = "iDCliente";
 
-                var consultadocumento = bd.tb_documento.ToList();
+            ClsDocumento clsDocumento = new ClsDocumento();
 
-                comboBox1.DataSource = consultadocumento;
+                comboBox1.DataSource = clsDocumento.cargarComboDocumento();
                 comboBox1.DisplayMember = "nombreDocumento";
                 comboBox1.ValueMember = "iDDocumento";
-            }
+            
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmProducto buscar = new frmProducto();
+            buscar.Show();
         }
     }
 }
